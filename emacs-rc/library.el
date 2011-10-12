@@ -168,3 +168,9 @@
   (if (or (eq major-mode 'c-mode) (eq major-mode 'c++-mode))
       (doxymacs-font-lock)))
 (add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
+
+
+;; auto complete
+;; (add-to-list 'ac-dictionary-directories "~/emacs-ext/site-lisp/ac-dict/auto-complete-1.3.1/dict")
+(require 'auto-complete-config)
+(ac-config-default)
