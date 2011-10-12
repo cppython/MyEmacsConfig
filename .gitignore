@@ -1,0 +1,40 @@
+
+# temporary file
+###################
+~*
+*~
+$*
+*$
+.*/
+\#*\#
+
+# Compiled source #
+###################
+*.exe
+*.dll
+*.so
+*.com
+*.class
+
+# c++ file
+*.[oa]
+*.obj
+*.pdb
+
+# python file
+*.pyc
+*.pyo
+
+Debug/
+*.ncb
+*.suo
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+
+.svn
