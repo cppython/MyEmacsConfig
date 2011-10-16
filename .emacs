@@ -1,4 +1,3 @@
-
 ;; …Ë÷√load-path¬∑æ∂
 (if (fboundp 'normal-top-level-add-subdirs-to-load-path)
     (let* ((my-lisp-dir "~/emacs-ext/site-lisp")
@@ -31,16 +30,17 @@
 		   "font-rc.el"
 		   "library.el"
 		   "bbs-rc.el"
-		   "tex-rc.el"
+		   ;; "tex-rc.el"
 		   "python-rc.el"
-		   "cedet-ecb.el"
+		   ;; "cedet-ecb.el"
+		   "programming-config.el"
 		   ))
   (load-file (concat
 	      (file-name-as-directory emacs-rc-path)
 	      rc-file)))
 
 (global-set-key (kbd "<f1>")
-		'(lambda () 
+		'(lambda ()
 		   (interactive)
 		   (bbs-connect "bbs.newsmth.org" "nmu" "11223")))
 
@@ -88,5 +88,5 @@
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
 
-(setq package-archives '(("ELPA" . "http://tromey.com/elpa/") 
+(setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
 			 ("gnu" . "http://elpa.gnu.org/packages/")))
